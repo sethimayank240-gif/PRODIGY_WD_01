@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Bites | Restaurant</title>
+  <link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Delicious Bites</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to Delicious Bites</h1>
+      <p>Experience the taste of authentic flavors</p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We bring you the finest dishes crafted with love and locally sourced ingredients. Come enjoy our cozy ambiance and mouth-watering menu.</p>
+  </section>
+
+  <section class="section dark" id="menu">
+    <h2>Our Menu</h2>
+    <p>From spicy starters to sweet delights, explore our curated selection of dishes that satisfy every craving.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Flavor Street, Food City<br>📞 +91 98765 43210<br>📧 contact@deliciousbites.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector("nav");
+      nav.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
+
+</body>
+</html>
