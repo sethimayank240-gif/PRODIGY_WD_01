@@ -5,14 +5,11 @@ const footer = document.getElementById("bottom-footer");
 const contactSection = document.getElementById("contact");
 const contactForm = document.getElementById("contact-form");
 
-// Hide footer initially
 if (footer) footer.style.display = "none";
 
 window.addEventListener("scroll", () => {
-  // Navbar background color change on scroll
   nav.style.backgroundColor = window.scrollY > 50 ? "#111" : "#222";
 
-  // Highlight active navbar link based on scroll position
   let currentSection = "";
   sections.forEach(section => {
     const sectionTop = section.offsetTop - 80;
@@ -27,8 +24,6 @@ window.addEventListener("scroll", () => {
       link.getAttribute("href") === "#" + currentSection
     );
   });
-
-  // Show footer when contact section is visible in viewport
   if (contactSection && footer) {
     const contactRect = contactSection.getBoundingClientRect();
     footer.style.display =
@@ -38,7 +33,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Handle contact form submission
 if (contactForm) {
   contactForm.addEventListener("submit", e => {
     e.preventDefault();
@@ -46,3 +40,4 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
