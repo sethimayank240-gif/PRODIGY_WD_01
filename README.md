@@ -8,9 +8,9 @@ Hover Effect – Menu items change color or style when hovered over.
 Responsive Design – Works across different screen sizes.
 
 📂 Project Structure
-├── index.html   # HTML structure of the navigation menu
-├── style.css    # CSS styling for the menu
-└── script.js    # JavaScript interactivity (scroll & hover effects)
+├── index2.html   # HTML structure of the navigation menu
+├── style2.css    # CSS styling for the menu
+└── script2.js    # JavaScript interactivity (scroll & hover effects)
 
 🚀 How It Works
 HTML (index.html)
